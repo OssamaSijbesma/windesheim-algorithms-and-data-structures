@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra01 FizzBuzz", "Extra01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra02 Random Array", "Extra02 Random Array\Extra02 Random Array.csproj", "{12814E2F-E45B-4514-BBE7-4A170255288B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra03 Max Value", "Extra03 Max Value\Extra03 Max Value.csproj", "{084F8942-A730-4FF1-B295-CD9D9E89746D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{12814E2F-E45B-4514-BBE7-4A170255288B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12814E2F-E45B-4514-BBE7-4A170255288B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12814E2F-E45B-4514-BBE7-4A170255288B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{084F8942-A730-4FF1-B295-CD9D9E89746D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084F8942-A730-4FF1-B295-CD9D9E89746D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084F8942-A730-4FF1-B295-CD9D9E89746D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084F8942-A730-4FF1-B295-CD9D9E89746D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
