@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson06 Tests", "Lesson06 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra01 FizzBuzz", "Extra01 FizzBuzz\Extra01 FizzBuzz.csproj", "{60978A99-3186-4656-9F97-FC36BD16EAF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra02 Random Array", "Extra02 Random Array\Extra02 Random Array.csproj", "{12814E2F-E45B-4514-BBE7-4A170255288B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{60978A99-3186-4656-9F97-FC36BD16EAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60978A99-3186-4656-9F97-FC36BD16EAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60978A99-3186-4656-9F97-FC36BD16EAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12814E2F-E45B-4514-BBE7-4A170255288B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12814E2F-E45B-4514-BBE7-4A170255288B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12814E2F-E45B-4514-BBE7-4A170255288B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12814E2F-E45B-4514-BBE7-4A170255288B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
