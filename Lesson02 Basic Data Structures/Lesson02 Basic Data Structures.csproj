@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Ex1ArrayList\" />
+    <Folder Include="Ex3Stack\" />
+    <Folder Include="Ex4BracketChecker\" />
+    <Folder Include="Ex5Queue\" />
   </ItemGroup>
 
 </Project>
