@@ -5,33 +5,35 @@ VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson01 Algorithm Analysis", "Lesson01 Algorithm Analysis\Lesson01 Algorithm Analysis.csproj", "{2757D71F-1546-4CBA-B685-67255BD9DF43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson02 Basic Data Structures", "Lesson02 Basic Data Structures\Lesson02 Basic Data Structures.csproj", "{EBB37663-3142-47A3-BC26-68EF60FDA737}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson02 Basic Data Structures", "Lesson02 Basic Data Structures\Lesson02 Basic Data Structures.csproj", "{EBB37663-3142-47A3-BC26-68EF60FDA737}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03 Recursion and Sorting", "Lesson03 Recursion and Sorting\Lesson03 Recursion and Sorting.csproj", "{062DDDF0-C82B-409F-9E21-162C24E91017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson03 Recursion and Sorting", "Lesson03 Recursion and Sorting\Lesson03 Recursion and Sorting.csproj", "{062DDDF0-C82B-409F-9E21-162C24E91017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson04 QuickSort and Trees", "Lesson04 QuickSort and Trees\Lesson04 QuickSort and Trees.csproj", "{D3BB99AE-D969-4043-B432-4C5500EF5C85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson04 QuickSort and Trees", "Lesson04 QuickSort and Trees\Lesson04 QuickSort and Trees.csproj", "{D3BB99AE-D969-4043-B432-4C5500EF5C85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson05 Binary Trees", "Lesson05 Binary Trees\Lesson05 Binary Trees.csproj", "{80A6CC80-0CF0-481C-9582-DAA364CFF673}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson05 Binary Trees", "Lesson05 Binary Trees\Lesson05 Binary Trees.csproj", "{80A6CC80-0CF0-481C-9582-DAA364CFF673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson06 Graphs", "Lesson06 Graphs\Lesson06 Graphs.csproj", "{3B82992D-99BA-496A-B332-285375B9AE14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson06 Graphs", "Lesson06 Graphs\Lesson06 Graphs.csproj", "{3B82992D-99BA-496A-B332-285375B9AE14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson02 Tests", "Lesson02 Tests\Lesson02 Tests.csproj", "{32FCE530-062B-4146-82B8-B20A0FD0F8EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson02 Tests", "Lesson02 Tests\Lesson02 Tests.csproj", "{32FCE530-062B-4146-82B8-B20A0FD0F8EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03 Tests", "Lesson03 Tests\Lesson03 Tests.csproj", "{60DC5057-C14C-4D41-B67B-F75E1058D057}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson03 Tests", "Lesson03 Tests\Lesson03 Tests.csproj", "{60DC5057-C14C-4D41-B67B-F75E1058D057}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson04 Tests", "Lesson04 Tests\Lesson04 Tests.csproj", "{398E6EA8-5DFB-4D14-AEE7-6D82B1E96962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson04 Tests", "Lesson04 Tests\Lesson04 Tests.csproj", "{398E6EA8-5DFB-4D14-AEE7-6D82B1E96962}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson05 Tests", "Lesson05 Tests\Lesson05 Tests.csproj", "{1089AC8C-694F-4E40-A14D-3EF18B08B992}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson05 Tests", "Lesson05 Tests\Lesson05 Tests.csproj", "{1089AC8C-694F-4E40-A14D-3EF18B08B992}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson06 Tests", "Lesson06 Tests\Lesson06 Tests.csproj", "{00756456-20C8-439F-ADAB-C7426159F294}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson06 Tests", "Lesson06 Tests\Lesson06 Tests.csproj", "{00756456-20C8-439F-ADAB-C7426159F294}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra01 FizzBuzz", "Extra01 FizzBuzz\Extra01 FizzBuzz.csproj", "{60978A99-3186-4656-9F97-FC36BD16EAF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extra01 FizzBuzz", "Extra01 FizzBuzz\Extra01 FizzBuzz.csproj", "{60978A99-3186-4656-9F97-FC36BD16EAF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra02 Random Array", "Extra02 Random Array\Extra02 Random Array.csproj", "{12814E2F-E45B-4514-BBE7-4A170255288B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extra02 Random Array", "Extra02 Random Array\Extra02 Random Array.csproj", "{12814E2F-E45B-4514-BBE7-4A170255288B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra03 Max Value", "Extra03 Max Value\Extra03 Max Value.csproj", "{084F8942-A730-4FF1-B295-CD9D9E89746D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extra03 Max Value", "Extra03 Max Value\Extra03 Max Value.csproj", "{084F8942-A730-4FF1-B295-CD9D9E89746D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra04 Calculate Complexity", "Extra04 Calculate Complexity\Extra04 Calculate Complexity.csproj", "{9158F013-94DA-4FC7-8933-8A626AC3FA9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extra04 Calculate Complexity", "Extra04 Calculate Complexity\Extra04 Calculate Complexity.csproj", "{9158F013-94DA-4FC7-8933-8A626AC3FA9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extra05 Cumulative Sum", "Extra05 Cumulative Sum\Extra05 Cumulative Sum.csproj", "{7CCD2721-C1A0-474D-A23B-0FB97ED696D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{9158F013-94DA-4FC7-8933-8A626AC3FA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9158F013-94DA-4FC7-8933-8A626AC3FA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9158F013-94DA-4FC7-8933-8A626AC3FA9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CCD2721-C1A0-474D-A23B-0FB97ED696D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CCD2721-C1A0-474D-A23B-0FB97ED696D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CCD2721-C1A0-474D-A23B-0FB97ED696D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CCD2721-C1A0-474D-A23B-0FB97ED696D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
