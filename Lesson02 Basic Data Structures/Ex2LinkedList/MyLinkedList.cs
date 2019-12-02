@@ -25,7 +25,7 @@ namespace Lesson02_Basic_Data_Structures.Ex2LinkedList
         // O(1) : Returns the first item of the list
         public T GetFirst()
         {
-            if (header == null)
+            if (size == 0)
                 throw new MyLinkedListEmptyException();
 
             return header.Value;
@@ -34,7 +34,7 @@ namespace Lesson02_Basic_Data_Structures.Ex2LinkedList
         // O(1) : Remove the first item of the list
         public void RemoveFirst()
         {
-            if (header == null)
+            if (size == 0)
                 throw new MyLinkedListEmptyException();
 
             header = header.Next;
@@ -46,16 +46,20 @@ namespace Lesson02_Basic_Data_Structures.Ex2LinkedList
         {
             if (index < 0 || index > size)
                 throw new MyLinkedListIndexOutOfRangeException();
-
-            MyNode<T> curNode = header;
-
-            for (int i = 0; i < index; i++)
+            if (index == 0)
+                AddFirst(value);
+            else
             {
-                curNode = curNode.Next;
-            }
+                MyNode<T> curNode = header;
 
-            curNode.Next = new MyNode<T>() { Value = value, Next = curNode.Next };
-            size++;
+                for (int i = 1; i < index; i++)
+                {
+                    curNode = curNode.Next;
+                }
+
+                curNode.Next = new MyNode<T>() { Value = value, Next = curNode.Next };
+                size++;
+            }
         }
 
         // O(1) : Obtain the size of the list
