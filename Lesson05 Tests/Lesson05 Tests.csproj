@@ -13,4 +13,8 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lesson05 Binary Trees\Lesson05 Binary Trees.csproj" />
+  </ItemGroup>
+
 </Project>
