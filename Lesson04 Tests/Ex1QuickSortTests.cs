@@ -1,7 +1,9 @@
-﻿using NUnit.Framework;
+﻿using Lesson04_QuickSort_and_Trees;
+using Lesson04_QuickSort_and_Trees.Ex1QuickSort;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace Lesson04_Tests
 {
