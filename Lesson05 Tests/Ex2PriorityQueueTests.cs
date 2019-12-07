@@ -1,7 +1,7 @@
-﻿using NUnit.Framework;
-using System;
+﻿using Lesson05_Binary_Trees;
+using Lesson05_Binary_Trees.Ex2PriorityQueue;
+using NUnit.Framework;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Lesson05_Tests
 {

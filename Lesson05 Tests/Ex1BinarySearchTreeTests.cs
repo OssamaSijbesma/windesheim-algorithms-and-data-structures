@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using Lesson05_Binary_Trees;
+using Lesson05_Binary_Trees.Ex1BinarySearchTree;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
