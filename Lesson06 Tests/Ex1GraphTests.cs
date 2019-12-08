@@ -1,7 +1,10 @@
-﻿using NUnit.Framework;
+﻿using Lesson06_Graphs;
+using Lesson06_Graphs.Ex1Graph;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Lesson06_Tests
 {

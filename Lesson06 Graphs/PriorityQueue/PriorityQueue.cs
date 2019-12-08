@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lesson05_Binary_Trees.Ex2PriorityQueue
+namespace Lesson06_Graphs.PriorityQueue
 {
     public class PriorityQueue<T> : IPriorityQueue<T>
            where T : System.IComparable<T>

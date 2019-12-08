@@ -1,14 +1,21 @@
 ﻿using Lesson06_Graphs.Ex1Graph;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Lesson06_Graphs
 {
-    class Program
+    public class DSBuilder
     {
-        static void Main(string[] args)
+        public static IGraph CreateGraphEmpty()
         {
-            // Figuur 14.1 uit boek.
+            return new Graph();
+        }
+
+        public static IGraph CreateGraph14_1()
+        {
             Graph graph = new Graph();
+
             graph.GetVertex("V0");
             graph.GetVertex("V1");
             graph.GetVertex("V2");
@@ -28,15 +35,8 @@ namespace Lesson06_Graphs
             graph.AddEdge("V2", "V5", 5);
             graph.AddEdge("V4", "V6", 6);
             graph.AddEdge("V6", "V5", 1);
-            System.Console.WriteLine(graph);
-            //PrintInfo(graph);
-            graph.Unweighted("V0");
-            System.Console.WriteLine(graph);
-            //PrintInfo(graph);
-            graph.Dijkstra("V0");
-            System.Console.WriteLine(graph);
-            //PrintInfo(graph);
-            System.Console.WriteLine(graph.IsConnected());
+
+            return graph;
         }
     }
 }
