@@ -28,12 +28,12 @@ namespace Lesson02_Basic_Data_Structures.Ex4BracketChecker
             return CheckBrackets(s, oppositesDictionary);
         }
 
+        // Check the brackets with a stack implementation.
         private static bool CheckBrackets(string s, IReadOnlyDictionary<char, char> oppositesDictionary)
         {
             char[] chars = s.ToCharArray();
 
             IMyStack<char> charStack = new MyStack<char>();
-
 
             foreach (char c in chars)
             {

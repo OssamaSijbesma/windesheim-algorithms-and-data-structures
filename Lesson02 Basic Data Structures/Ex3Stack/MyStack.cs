@@ -40,7 +40,7 @@ namespace Lesson02_Basic_Data_Structures.Ex3Stack
         // O(1) : Add an item on the stack
         public void Push(T value)
         {
-            header = new MyNode<T>() { Value = value, Next = header };
+            header = new MyNode<T>(value, header);
             size++;
         }
 

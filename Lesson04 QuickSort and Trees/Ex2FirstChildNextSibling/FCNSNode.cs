@@ -10,8 +10,10 @@ namespace Lesson04_QuickSort_and_Trees.Ex2FirstChildNextSibling
         private FCNSNode<T> firstChild;
         private FCNSNode<T> nextSibling;
 
+        // Constructor
         public FCNSNode(T data) => this.data = data;
 
+        // Constructor
         public FCNSNode(T data, FCNSNode<T> firstChild, FCNSNode<T> nextSibling) 
         {
             this.data = data;
@@ -19,12 +21,16 @@ namespace Lesson04_QuickSort_and_Trees.Ex2FirstChildNextSibling
             this.nextSibling = nextSibling;
         }
 
+        // Return the data of the node
         public T GetData() => data;
 
+        // Return the first child of the node
         public FCNSNode<T> GetFirstChild() => firstChild;
 
+        // Return the next sibling of the node
         public FCNSNode<T> GetNextSibling() => nextSibling;
 
+        // Print the nodes pre-order N-L-R
         public void PrintPreOrder() 
         {
             Console.WriteLine(data);
@@ -34,6 +40,7 @@ namespace Lesson04_QuickSort_and_Trees.Ex2FirstChildNextSibling
                 nextSibling.PrintPreOrder();
         }
 
+        // Print the nodes in-order L-N-R
         public void PrintInOrder() 
         {
             if (firstChild != null)
@@ -43,6 +50,7 @@ namespace Lesson04_QuickSort_and_Trees.Ex2FirstChildNextSibling
                 nextSibling.PrintInOrder();
         }
 
+        // Print the nodes post-order L-R-N
         public void PrintPostOrder() 
         {
             if (firstChild != null)
@@ -52,6 +60,8 @@ namespace Lesson04_QuickSort_and_Trees.Ex2FirstChildNextSibling
             Console.WriteLine(data);
         }
 
+        // ToString: <data>,FC(<contents first child>),NS(<contents next sibling>)
+        // Example: a,FC(b,FC(d),NS(c))
         public override string ToString()
         {
             return $"{data}{((firstChild != null) ? $",FC({firstChild.ToString()})" : "")}{((nextSibling != null) ? $",NS({nextSibling.ToString()})" : "")}";

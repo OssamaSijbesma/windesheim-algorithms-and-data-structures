@@ -8,8 +8,10 @@ namespace Lesson04_QuickSort_and_Trees.Ex2FirstChildNextSibling
     {
         public FCNSNode<T> root;
 
+        // Return the size of the FCNS tree
         public int Size() => Size(root);
 
+        // Return the size of the given node.
         private int Size(FCNSNode<T> node)
         {
             if (node == null)
@@ -20,6 +22,7 @@ namespace Lesson04_QuickSort_and_Trees.Ex2FirstChildNextSibling
                 + ((node.GetNextSibling() != null) ? Size(node.GetNextSibling()) : 0);
         }
 
+        // Print the FCNS tree pre-order N-L-R
         public void PrintPreOrder()
         {
             if (root != null)
@@ -28,6 +31,7 @@ namespace Lesson04_QuickSort_and_Trees.Ex2FirstChildNextSibling
                 Console.WriteLine("NIL");
         }
 
+        // Print the FCNS tree post-order L-R-N
         public void PrintPostOrder()
         {
             if (root != null)
@@ -36,6 +40,7 @@ namespace Lesson04_QuickSort_and_Trees.Ex2FirstChildNextSibling
                 Console.WriteLine("NIL");
         }
 
+        // Print the FCNS tree in-order L-N-R
         public void PrintInOrder()
         {
             if (root != null)
@@ -44,6 +49,7 @@ namespace Lesson04_QuickSort_and_Trees.Ex2FirstChildNextSibling
                 Console.WriteLine("NIL");
         }
 
+        // ToString FCNS tree
         public override string ToString() => (root != null) ? root.ToString() : "NIL";
     }
 }

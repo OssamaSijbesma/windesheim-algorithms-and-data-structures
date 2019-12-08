@@ -1,6 +1,7 @@
 ﻿using Lesson06_Graphs.PriorityQueue;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Lesson06_Graphs.Ex1Graph
@@ -143,7 +144,23 @@ namespace Lesson06_Graphs.Ex1Graph
 
         public bool IsConnected()
         {
-            throw new System.NotImplementedException();
+            bool CanReachNode(Vertex nodeOne, Vertex nodeTwo, IEnumerable<Vertex> visitedNodes)
+            {
+                if (nodeOne.adj.Any(edge => edge.dest == nodeTwo)) return true;
+
+                if (nodeOne.adj.Count == 0) return false;
+
+                ICollection<Vertex> newVisitedNodes = new LinkedList<Vertex>(visitedNodes);
+                newVisitedNodes.Add(nodeOne);
+
+                return nodeOne.adj.Where(edge => !newVisitedNodes.Contains(edge.dest))
+                                .Select(edge => CanReachNode(edge.dest, nodeTwo, newVisitedNodes))
+                                .FirstOrDefault();
+            }
+
+            bool CanReachAllNodes(Vertex vertex) => this.vertexMap.Values.All(otherVertex => CanReachNode(vertex, otherVertex, new List<Vertex>()));
+
+            return this.vertexMap.Values.All(CanReachAllNodes);
         }
     }
 }

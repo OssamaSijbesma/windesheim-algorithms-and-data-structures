@@ -46,7 +46,7 @@ namespace Lesson03_Recursion_and_Sorting.Ex2Fibonacci
             for (int i = 1; i < n; i++)
             {
                 long temp = n1;
-                n1 = n1 + n2;
+                n1 += n2;
                 n2 = temp;
 
                 calls++;

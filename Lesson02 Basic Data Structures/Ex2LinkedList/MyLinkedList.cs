@@ -18,7 +18,7 @@ namespace Lesson02_Basic_Data_Structures.Ex2LinkedList
         // O(1) : Add an item to the start of the list
         public void AddFirst(T value)
         {
-            header = new MyNode<T>() { Value = value, Next = header };
+            header = new MyNode<T>(value, header);
             size++;
         }
 
@@ -57,7 +57,7 @@ namespace Lesson02_Basic_Data_Structures.Ex2LinkedList
                     curNode = curNode.Next;
                 }
 
-                curNode.Next = new MyNode<T>() { Value = value, Next = curNode.Next };
+                curNode.Next = new MyNode<T>(value, curNode.Next);
                 size++;
             }
         }
