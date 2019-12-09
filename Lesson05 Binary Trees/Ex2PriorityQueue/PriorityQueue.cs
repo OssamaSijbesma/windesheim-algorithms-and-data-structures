@@ -11,19 +11,14 @@ namespace Lesson05_Binary_Trees.Ex2PriorityQueue
         public int size;   // Number of elements in heap
         public T[] array;  // The heap array
 
-        //----------------------------------------------------------------------
         // Constructor
-        //----------------------------------------------------------------------
         public PriorityQueue()
         {
             size = 0;
             array = new T[DEFAULT_CAPACITY];
         }
 
-        //----------------------------------------------------------------------
-        // Interface methods that have to be implemented for exam
-        //----------------------------------------------------------------------
-
+        // Add an item to the PriorityQueue
         public void Add(T x)
         {
             if (size + 1 == array.Length)
@@ -42,6 +37,7 @@ namespace Lesson05_Binary_Trees.Ex2PriorityQueue
             array[hole] = x;
         }
 
+        // Remove the smallest item
         public T Remove()
         {
             if (size == 0)
@@ -54,10 +50,13 @@ namespace Lesson05_Binary_Trees.Ex2PriorityQueue
             return minItem;
         }
 
+        // Clear the priority queue
         public void Clear() => size = 0;
 
+        // Return the size of this priority queue
         public int Size() => size;
 
+        // Add an item without the percolate
         public void AddFreely(T x)
         {
             if (size + 1 == array.Length)
@@ -66,6 +65,7 @@ namespace Lesson05_Binary_Trees.Ex2PriorityQueue
             array[++size] = x;
         }
 
+        // Build the entire priority queue
         public void BuildHeap()
         {
             for (int i = size / 2; i > 0; i--)

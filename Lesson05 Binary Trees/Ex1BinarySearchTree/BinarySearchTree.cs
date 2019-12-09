@@ -7,8 +7,10 @@ namespace Lesson05_Binary_Trees.Ex1BinarySearchTree
     public class BinarySearchTree<T> : BinaryTree<T>, IBinarySearchTree<T>
         where T : System.IComparable<T>
     {
+        // Add binary node to this tree
         public void Insert(T x) => root = Insert(x, root);
 
+        // Add a binary node to a tree
         private BinaryNode<T> Insert(T x, BinaryNode<T> node)
         {
             if (node == null)
@@ -23,6 +25,7 @@ namespace Lesson05_Binary_Trees.Ex1BinarySearchTree
             return node;
         }
 
+        // Find the smallest item in this tree
         public T FindMin()
         {
             if (root == null)
@@ -31,6 +34,7 @@ namespace Lesson05_Binary_Trees.Ex1BinarySearchTree
             return FindMin(root);
         }
 
+        // Find the smallest item in a tree
         private T FindMin(BinaryNode<T> node)
         {
             if (node != null)
@@ -40,6 +44,7 @@ namespace Lesson05_Binary_Trees.Ex1BinarySearchTree
             return node.data;
         }
 
+        // Remove the smallest item in this tree
         public void RemoveMin()
         {
             if (root == null)
@@ -48,6 +53,7 @@ namespace Lesson05_Binary_Trees.Ex1BinarySearchTree
             root = RemoveMin(root);
         }
 
+        // Remove the smallest item in a tree
         private BinaryNode<T> RemoveMin(BinaryNode<T> node)
         {
             if (node == null)
@@ -60,8 +66,11 @@ namespace Lesson05_Binary_Trees.Ex1BinarySearchTree
             else
                 return node.right;
         }
-
+        
+        // Remove an item from this tree
         public void Remove(T x) => Remove(x, root);
+
+        // Remove a item from a tree
         private BinaryNode<T> Remove(T x, BinaryNode<T> node)
         {
             if (node == null)
@@ -81,6 +90,7 @@ namespace Lesson05_Binary_Trees.Ex1BinarySearchTree
             return node;
         }
 
+        // Tree traversal L-R-N
         public string InOrder() => root.ToInfixString();
 
         public override string ToString()

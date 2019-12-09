@@ -11,20 +11,13 @@ namespace Lesson06_Graphs.Ex1Graph
         public static readonly double INFINITY = System.Double.MaxValue;
         private Dictionary<string, Vertex> vertexMap;
 
-        //----------------------------------------------------------------------
         // Constructor
-        //----------------------------------------------------------------------
-
         public Graph()
         {
             vertexMap = new Dictionary<string, Vertex>();
         }
 
-
-        //----------------------------------------------------------------------
-        // Interface methods that have to be implemented for exam
-        //----------------------------------------------------------------------
-
+        // Return a vertex if it's not in the dictonary add one
         public Vertex GetVertex(string name)
         {
             Vertex vertex;
@@ -38,24 +31,22 @@ namespace Lesson06_Graphs.Ex1Graph
             }
         }
 
+        // Add a new edge to the graph
         public void AddEdge(string source, string dest, double cost)
         {
             Vertex vertex = GetVertex(source);
             Vertex vertex1 = GetVertex(dest);
-            vertex.adj.AddLast(new Edge(vertex1, cost));
+            vertex.edges.AddLast(new Edge(vertex1, cost));
         }
 
+        // Clear all vertexes
         public void ClearAll()
         {
             foreach (Vertex vertex in vertexMap.Values)
                 vertex.Reset();
         }
 
-
-        //----------------------------------------------------------------------
-        // ToString that has to be implemented for exam
-        //----------------------------------------------------------------------
-
+        // To string of this graph
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -65,11 +56,7 @@ namespace Lesson06_Graphs.Ex1Graph
             return stringBuilder.ToString();
         }
 
-
-        //----------------------------------------------------------------------
-        // Interface methods : methods that have to be implemented for homework
-        //----------------------------------------------------------------------
-
+        // Unweighted algorithm
         public void Unweighted(string name)
         {
             ClearAll();
@@ -86,7 +73,7 @@ namespace Lesson06_Graphs.Ex1Graph
             {
                 Vertex vertex = vertices.Dequeue();
 
-                foreach (Edge edge in vertex.adj)
+                foreach (Edge edge in vertex.edges)
                 {
                     Vertex vertex1 = edge.dest;
 
@@ -100,6 +87,7 @@ namespace Lesson06_Graphs.Ex1Graph
             }
         }
 
+        // Dijkstra algorithm
         public void Dijkstra(string name)
         {
             PriorityQueue<Path> priorityQueue = new PriorityQueue<Path>();
@@ -124,7 +112,7 @@ namespace Lesson06_Graphs.Ex1Graph
                 v.scratch = 1;
                 nodesSeen++;
 
-                foreach (Edge edge in v.adj)
+                foreach (Edge edge in v.edges)
                 {
                     Vertex vertex = edge.dest;
                     double cvw = edge.cost;
@@ -142,18 +130,19 @@ namespace Lesson06_Graphs.Ex1Graph
             }
         }
 
+        // Check if all nodes are connected
         public bool IsConnected()
         {
             bool CanReachNode(Vertex nodeOne, Vertex nodeTwo, IEnumerable<Vertex> visitedNodes)
             {
-                if (nodeOne.adj.Any(edge => edge.dest == nodeTwo)) return true;
+                if (nodeOne.edges.Any(edge => edge.dest == nodeTwo)) return true;
 
-                if (nodeOne.adj.Count == 0) return false;
+                if (nodeOne.edges.Count == 0) return false;
 
                 ICollection<Vertex> newVisitedNodes = new LinkedList<Vertex>(visitedNodes);
                 newVisitedNodes.Add(nodeOne);
 
-                return nodeOne.adj.Where(edge => !newVisitedNodes.Contains(edge.dest))
+                return nodeOne.edges.Where(edge => !newVisitedNodes.Contains(edge.dest))
                                 .Select(edge => CanReachNode(edge.dest, nodeTwo, newVisitedNodes))
                                 .FirstOrDefault();
             }
