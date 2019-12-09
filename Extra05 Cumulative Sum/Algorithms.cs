@@ -30,7 +30,7 @@ namespace Extra05_Cumulative_Sum
             if (index < 0 || index > array.Length)
                 new IndexOutOfRangeException();
 
-
+            return 0;
         }
 
         static void RunWithTimer(int[] array, int index)
