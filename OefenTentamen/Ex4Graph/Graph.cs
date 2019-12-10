@@ -17,9 +17,25 @@ namespace OefenTentamen.Ex4Graph
             vertexMap = new Dictionary<string, Vertex>();
         }
 
-        public void FillDistance(string name) 
+        public void FillDistance(string name)
         {
+            Vertex target;
+            if (!vertexMap.TryGetValue(name, out target))
+                throw new System.Exception();
 
+            Queue<double> results = new Queue<double>();
+
+            foreach (Vertex vertex in vertexMap.Values)
+            {
+                Unweighted(vertex.name);
+                
+                results.Enqueue( (target.dist == INFINITY) ? -1 : target.dist);
+            };
+
+            ClearAll();
+
+            foreach (Vertex vertex in vertexMap.Values)
+                vertex.dist = results.Dequeue();
         }
 
         public void ShowDistance()

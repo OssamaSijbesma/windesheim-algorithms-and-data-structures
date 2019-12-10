@@ -61,9 +61,6 @@ namespace OefenTentamen.Ex2BinarySearchTree
 
             currentNode = currentNode.right;
 
-            if (currentNode.left == null)
-                return currentNode;
-
             while (currentNode.left != null)
                 currentNode = currentNode.left;
 

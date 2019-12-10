@@ -9,15 +9,15 @@ namespace OefenTentamen.Ex1Recursion
         public static string PrintLetters(int i) 
         {
             if (i == 0)
-                return "";
+                return default;
 
-            return $"A{PrintLetters(i - 1)}Z";
+            return $"A{PrintLetters(--i)}Z";
         }
 
         public static string PrintLetters2(int i, int j)
         {
             if (i == 0 && j == 0)
-                return "";
+                return default;
             else if (i == 0)
                 return $"{PrintLetters2(i, --j)}Z";
             else if (j == 0)

@@ -61,27 +61,35 @@ namespace Lesson06_Graphs.Ex1Graph
         {
             ClearAll();
 
+            // Register the startpoint of the algorithm
             Vertex start;
             if (!vertexMap.TryGetValue(name, out start))
                 throw new System.Exception();
 
+            // Create a queue with all the nodes to register
             Queue<Vertex> vertices = new Queue<Vertex>();
             vertices.Enqueue(start);
             start.dist = 0;
-
+            
+            // While the queue is not empty
             while (vertices.Count > 0)
             {
+                // Dequeue a vertex from the queue
                 Vertex vertex = vertices.Dequeue();
 
+                // Foreach all edges of the current vertex
                 foreach (Edge edge in vertex.edges)
                 {
-                    Vertex vertex1 = edge.dest;
+                    Vertex destVertex = edge.dest;
 
-                    if (vertex1.dist == INFINITY)
+                    // Check if the node is already visited
+                    if (destVertex.dist == INFINITY)
                     {
-                        vertex1.dist = vertex.dist + 1;
-                        vertex1.prev = vertex;
-                        vertices.Enqueue(vertex1);
+                        // Set distance en previous vertex
+                        destVertex.dist = vertex.dist + 1;
+                        destVertex.prev = vertex;
+                        // Enqueue the next vertex
+                        vertices.Enqueue(destVertex);
                     }
                 }
             }
@@ -90,41 +98,52 @@ namespace Lesson06_Graphs.Ex1Graph
         // Dijkstra algorithm
         public void Dijkstra(string name)
         {
-            PriorityQueue<Path> priorityQueue = new PriorityQueue<Path>();
+            ClearAll();
 
+            // Register the startpoint of the algorithm
             Vertex start;
             if (!vertexMap.TryGetValue(name, out start))
                 throw new System.Exception();
 
-            ClearAll();
+            // Create a priority queue
+            PriorityQueue<Path> priorityQueue = new PriorityQueue<Path>();
             priorityQueue.Add(new Path(start, 0));
             start.dist = 0;
 
+            // Amount of nodes seen
             int nodesSeen = 0;
+
+            // Continue while the priority queue still has items and if not all vertexes are seen.
             while (priorityQueue.Size() > 0 && nodesSeen < vertexMap.Count)
             {
-                Path vrec = priorityQueue.Remove();
-                Vertex v = vrec.dest;
+                // Get the vertex with the shortest path
+                Path path = priorityQueue.Remove();
+                Vertex vertex = path.dest;
 
-                if (v.scratch != 0)
+                if (vertex.scratch != 0)
                     continue;
 
-                v.scratch = 1;
+                // Scratch vertex
+                vertex.scratch = 1;
                 nodesSeen++;
 
-                foreach (Edge edge in v.edges)
+                // Foreach all edges en set the distance of those nodes
+                foreach (Edge edge in vertex.edges)
                 {
-                    Vertex vertex = edge.dest;
-                    double cvw = edge.cost;
+                    Vertex destVertex = edge.dest;
+                    double edgeCost = edge.cost;
 
-                    if (cvw < 0)
+                    if (edgeCost < 0)
                         throw new System.Exception();
 
-                    if (vertex.dist > v.dist + cvw)
+                    // Check if the distance is shorter
+                    if (destVertex.dist > vertex.dist + edgeCost)
                     {
-                        vertex.dist = v.dist + cvw;
-                        vertex.prev = v;
-                        priorityQueue.Add(new Path(vertex, vertex.dist));
+                        // Set the distance and the vertex where it came from
+                        destVertex.dist = vertex.dist + edgeCost;
+                        destVertex.prev = vertex;
+                        // Add vertex to the priority queue
+                        priorityQueue.Add(new Path(destVertex, destVertex.dist));
                     }
                 }
             }

@@ -29,6 +29,9 @@ namespace OefenTentamen.Ex3MinHeap
 
         public bool IsMaxHeap()
         {
+            if (!IsComplete())
+                return false;
+
             for (int i = 2; i <= size; i++)
             {
                 if (array[i].CompareTo(array[i / 2]) == 1)
