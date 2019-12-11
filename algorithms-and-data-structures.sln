@@ -37,9 +37,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extra05 Cumulative Sum", "E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OefenTentamen", "OefenTentamen\OefenTentamen.csproj", "{7D89EA25-21AD-4522-82C2-E5D20BC7E039}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicum1920 VT1", "Practicum1920 VT1\Practicum1920 VT1.csproj", "{9241EC22-D03E-43E4-80DF-4E1494DCB069}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practicum1920 VT1", "Practicum1920 VT1\Practicum1920 VT1.csproj", "{9241EC22-D03E-43E4-80DF-4E1494DCB069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicum1920 VT1 Tests", "Practicum1920 VT1 Tests\Practicum1920 VT1 Tests.csproj", "{D16C01E5-C8D4-46AF-967D-2793CA22F56A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practicum1920 VT1 Tests", "Practicum1920 VT1 Tests\Practicum1920 VT1 Tests.csproj", "{D16C01E5-C8D4-46AF-967D-2793CA22F56A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicum1920 VT1_2", "Practicum1920 VT1_2\Practicum1920 VT1_2.csproj", "{19D51808-5CAC-4BC1-9302-C0E2B7242F62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicum1920 VT1_2 Tests", "Practicum1920 VT1_2 Tests\Practicum1920 VT1_2 Tests.csproj", "{B55A6F33-F65C-4AC0-A30C-1E5CC7896339}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +127,14 @@ Global
 		{D16C01E5-C8D4-46AF-967D-2793CA22F56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D16C01E5-C8D4-46AF-967D-2793CA22F56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D16C01E5-C8D4-46AF-967D-2793CA22F56A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D51808-5CAC-4BC1-9302-C0E2B7242F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D51808-5CAC-4BC1-9302-C0E2B7242F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D51808-5CAC-4BC1-9302-C0E2B7242F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D51808-5CAC-4BC1-9302-C0E2B7242F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B55A6F33-F65C-4AC0-A30C-1E5CC7896339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B55A6F33-F65C-4AC0-A30C-1E5CC7896339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B55A6F33-F65C-4AC0-A30C-1E5CC7896339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B55A6F33-F65C-4AC0-A30C-1E5CC7896339}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
