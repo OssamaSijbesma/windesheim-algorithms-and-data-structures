@@ -41,9 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practicum1920 VT1", "Practi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practicum1920 VT1 Tests", "Practicum1920 VT1 Tests\Practicum1920 VT1 Tests.csproj", "{D16C01E5-C8D4-46AF-967D-2793CA22F56A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicum1920 VT1_2", "Practicum1920 VT1_2\Practicum1920 VT1_2.csproj", "{19D51808-5CAC-4BC1-9302-C0E2B7242F62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practicum1920 VT1_2", "Practicum1920 VT1_2\Practicum1920 VT1_2.csproj", "{19D51808-5CAC-4BC1-9302-C0E2B7242F62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicum1920 VT1_2 Tests", "Practicum1920 VT1_2 Tests\Practicum1920 VT1_2 Tests.csproj", "{B55A6F33-F65C-4AC0-A30C-1E5CC7896339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practicum1920 VT1_2 Tests", "Practicum1920 VT1_2 Tests\Practicum1920 VT1_2 Tests.csproj", "{B55A6F33-F65C-4AC0-A30C-1E5CC7896339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book", "Book\Book.csproj", "{A659FB4D-CADE-45B6-9799-A2D58FE00FCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{B55A6F33-F65C-4AC0-A30C-1E5CC7896339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B55A6F33-F65C-4AC0-A30C-1E5CC7896339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B55A6F33-F65C-4AC0-A30C-1E5CC7896339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A659FB4D-CADE-45B6-9799-A2D58FE00FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A659FB4D-CADE-45B6-9799-A2D58FE00FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A659FB4D-CADE-45B6-9799-A2D58FE00FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A659FB4D-CADE-45B6-9799-A2D58FE00FCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
