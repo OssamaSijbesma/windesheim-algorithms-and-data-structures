@@ -24,17 +24,17 @@ namespace Book.BinarySearchTree
             if (node == null)
                 return default;
 
-            return node.GetElement();
+            return node.element;
         }
 
         private BinaryNode<T> Find(T element, BinaryNode<T> node) 
         {
             while (node != null)
             {
-                if (element.CompareTo(node.GetElement()) < 0)
-                    node = node.GetLeft();
-                else if (element.CompareTo(node.GetElement()) > 0)
-                    node = node.GetRight();
+                if (element.CompareTo(node.element) < 0)
+                    node = node.left;
+                else if (element.CompareTo(node.element) > 0)
+                    node = node.right;
                 else
                     return node;
             }
@@ -45,8 +45,8 @@ namespace Book.BinarySearchTree
         BinaryNode<T> FindMin(BinaryNode<T> node)
         {
             if (node != null)
-                while (node.GetLeft() != null)
-                    node = node.GetLeft();
+                while (node.left != null)
+                    node = node.left;
 
             return node;
         }
@@ -54,8 +54,8 @@ namespace Book.BinarySearchTree
         BinaryNode<T> FindMax(BinaryNode<T> node)
         {
             if (node != null)
-                while (node.GetRight() != null)
-                    node = node.GetRight();
+                while (node.right != null)
+                    node = node.right;
 
             return node;
         }
@@ -64,10 +64,10 @@ namespace Book.BinarySearchTree
         {
             if (node == null)
                 node = new BinaryNode<T>(element);
-            else if (element.CompareTo(node.GetElement()) < 0)
-                node.SetLeft(Insert(element, node.GetLeft()));
-            else if (element.CompareTo(node.GetElement()) > 0)
-                node.SetRight(Insert(element, node.GetRight()));
+            else if (element.CompareTo(node.element) < 0)
+                node.left = Insert(element, node.left);
+            else if (element.CompareTo(node.element) > 0)
+                node.right = Insert(element, node.right);
             else
                 throw new Exception();
             return node;
@@ -77,32 +77,31 @@ namespace Book.BinarySearchTree
         {
             if (node == null)
                 throw new Exception();
-            else if (node.GetLeft() != null)
+            else if (node.left != null)
             {
-                node.SetLeft(RemoveMin(node.GetLeft()));
+                node.left = RemoveMin(node.left);
                 return node;
             }
             else
-                return node.GetRight();
+                return node.right;
         }
 
         BinaryNode<T> Remove(T element, BinaryNode<T> node)
         {
             if (node == null)
                 throw new Exception();
-            if (element.CompareTo(node.GetElement()) < 0)
-                node.SetLeft(Remove(element, node.GetLeft()));
-            else if (element.CompareTo(node.GetElement()) > 0)
-                node.SetRight(Remove(element, node.GetRight()));
-            else if (node.GetLeft() != null && node.GetRight() != null)
+            if (element.CompareTo(node.element) < 0)
+                node.left = Remove(element, node.left);
+            else if (element.CompareTo(node.element) > 0)
+                node.right = Remove(element, node.right);
+            else if (node.left != null && node.right != null)
             {
-                node.SetElement(ElementAt(FindMin(node.GetRight())));
-                node.SetRight(RemoveMin(node.GetRight()));
+                node.element = ElementAt(FindMin(node.right));
+                node.right = RemoveMin(node.right);
             }
             else
-                node = (node.GetLeft() != null) ? node.GetLeft() : node.GetRight();
+                node = (node.left != null) ? node.left : node.right;
             return node;
-
         }
     }
 }
