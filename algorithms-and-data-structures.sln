@@ -45,7 +45,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practicum1920 VT1_2", "Prac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practicum1920 VT1_2 Tests", "Practicum1920 VT1_2 Tests\Practicum1920 VT1_2 Tests.csproj", "{B55A6F33-F65C-4AC0-A30C-1E5CC7896339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book", "Book\Book.csproj", "{A659FB4D-CADE-45B6-9799-A2D58FE00FCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Book", "Book\Book.csproj", "{A659FB4D-CADE-45B6-9799-A2D58FE00FCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicum1920 VT2", "Practicum1920 VT2\Practicum1920 VT2.csproj", "{F7B455F6-1F88-4913-A030-84E411B5851F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{A659FB4D-CADE-45B6-9799-A2D58FE00FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A659FB4D-CADE-45B6-9799-A2D58FE00FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A659FB4D-CADE-45B6-9799-A2D58FE00FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B455F6-1F88-4913-A030-84E411B5851F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B455F6-1F88-4913-A030-84E411B5851F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B455F6-1F88-4913-A030-84E411B5851F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B455F6-1F88-4913-A030-84E411B5851F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
