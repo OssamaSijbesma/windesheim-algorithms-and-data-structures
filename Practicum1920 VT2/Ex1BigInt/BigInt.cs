@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Practicum1920_VT2
 {
-    class BigInt
+    public class BigInt
     {
         public BigIntNode first;
 

@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Book", "Book\Book.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicum1920 VT2", "Practicum1920 VT2\Practicum1920 VT2.csproj", "{F7B455F6-1F88-4913-A030-84E411B5851F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicum1920 VT2 Tests", "Practicum1920 VT2 Tests\Practicum1920 VT2 Tests.csproj", "{5F97E29A-3B6A-478A-970D-62CF41A8DD53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{F7B455F6-1F88-4913-A030-84E411B5851F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7B455F6-1F88-4913-A030-84E411B5851F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7B455F6-1F88-4913-A030-84E411B5851F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F97E29A-3B6A-478A-970D-62CF41A8DD53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F97E29A-3B6A-478A-970D-62CF41A8DD53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F97E29A-3B6A-478A-970D-62CF41A8DD53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F97E29A-3B6A-478A-970D-62CF41A8DD53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
